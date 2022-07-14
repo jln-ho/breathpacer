@@ -1,2 +1,5 @@
 this is a new idea
-this is some specification
+model parameters for breath visualization
+* durationInhale
+* durationExhale
+
