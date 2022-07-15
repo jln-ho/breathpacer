@@ -2,4 +2,40 @@ this is a new idea
 model parameters for breath visualization
 * durationInhale
 * durationExhale
+* durationInhalebreak
+* durationExhalebreak
 
+einstellung der atemzeiten nur in 0,5s intervallen möglich, inhalebreak und exhalebreak darf 0 sein;
+
+eine box für 0,5s atemzeit oder breatholdingtime
+
+einatemzeit: erste box z.b. 10 pixel hoch;   letzte box 30 pixel hoch
+
+inhalenumberboxes = inbreathtime / 0,5
+
+sizedifferenceinbreathbox = (30 - 10) / inhalenumberboxes
+
+Array inhale boxes height: [10, 10+ sizedifferenceinbreathbox, 10+ 2 *sizedifferenceinbreathbox, ...., 30]
+
+
+
+ausatemzeit: erste box z.b. 30 pixel hoch;   letzte box 10 pixel hoch
+
+exhalenumberboxes = outbreathtime / 0,5
+
+sizedifferenceoutbreathbox = (30 - 10) / exhalenumberboxes;
+
+Array exhale boxes height: [30, 30 - sizedifferenceoutbreathbox, 10+ 2 *sizedifferenceoutbreathbox, ...., 10]
+
+
+selbes prizip für inhale und exhalebreak, die größe der boxen bleibt aber konstant. größe inhalebreakbox = 30, größe exhalebrakbox = 10;
+
+
+
+Colourswitch:
+
+alle 0,5 s wandert das farbraster um eine position nach rechts. wenn mit einer z.b. mit einer roten box angefangen wird, soll diese nachdem sie das ganze array durchlaufen hat auch wieder die erste sein die auftacht. 
+
+man hat also ein großes array aus [inhaleboxes, inhalebreakboxes, exhaleboxes, exhalebreakboxes]
+
+farben könnte man 3 stück wählen, evtl eine opacity variable um die farben etwas weniger leuchtend zu machen.
