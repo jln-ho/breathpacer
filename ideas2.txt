@@ -1,0 +1,34 @@
+neue vereinfachung.
+
+es gibt immer 20 boxen für einen vollen atemzug.
+
+es gibt die möglichkeit im menü die gewichtung von 50% ein 50% ausatem auf 45% ein und 55% ausatem und 40% ein und 60% ausatem zu legen.
+
+das entspricht bei 40% einatem 8:12 boxen,
+bei 45% ein 9:11 boxen,
+bei 50% ein 10:10 boxen.
+
+
+
+
+für die atemfrequenz gibt es die möglichkeit zwischen 4-8 atemzügen pro minute.
+daraus ergibt sich die leuchtdauer einer farbe pro box von:
+
+leuchtdauer = 60s/ atemfrequenz   / 20 (anzahl der boxen)
+
+
+die 20 boxen sind alle immer in 4 farben aufgeteilt.
+
+rot/blau/grün/gelb/rot/blau/grün/gelb/rot/blau/grün/gelb/rot/blau/grün/gelb
+
+alle leuchtdauer sekunden springt das ganze muster um eine stelle nach rechts. die farbe ganz rechts am ende des ausatems wird die farbe ganz links anfang des einatems bei einem wechsel.
+
+man folgt also beim atmen der ersten farbe ganz links durch das ganze array und hat somit die eingestellte atemzeit.
+
+ziel ist es immer langsamer zu atem als man das normalerweise im alltag tut. man kann aber probleme kriegen diese langsamkeit auszuhalten.
+das ist aber kein problem, man springt dann einfach auf die box die am ende des jeweiligen ein- oder ausatemintervalles liegt.
+fängst du zum beispiel mit rot beim einatmen an, merkst aber das ist dir zu langsam,
+springst du einfach auf die farbe am anfang des ausatemintervalls und folgst der wie es passt. das gleicht kannst du natürlich auch beim
+ausatmen machen. wird der ausatem zu lange springst du einfach zum einatemintervall auf die erste box und folgst der.
+dadurch kommt man beim üben nicht in druck und kann sich langsam an die gewünschte einatemfrequenz anpassen.
+diese sollte nätürlich vorher schon grob auf die eigene atem im menü voreingestellt werden.
