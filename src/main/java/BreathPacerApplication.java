@@ -18,15 +18,14 @@ public class BreathPacerApplication {
 
         @Override
         public void start(Stage stage) throws Exception {
-
             // Set stage dimensions
             stage.setWidth(stageWidth);
             stage.setHeight(stageHeight);
 
             // Set stage position
-            final Screen screen = Screen.getPrimary();
-            final int screenWidth = (int) screen.getBounds().getWidth();
-            final int screenWeight = (int) screen.getBounds().getHeight();
+            final var screen = Screen.getPrimary();
+            final var screenWidth = (int) screen.getBounds().getWidth();
+            final var screenHeight = (int) screen.getBounds().getHeight();
             final var windowUpperLeftCornerPositionX = (screenWidth / 2) - (stageWidth / 2);
             final var windowUpperLeftCornerPositionY = 0;
             stage.setX(windowUpperLeftCornerPositionX);
