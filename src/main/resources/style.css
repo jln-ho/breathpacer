@@ -1,1 +1,5 @@
-.root { -fx-background-color:rgba(0,0,0,0.1); }
+.root { -fx-background-color:rgba(0,0,0,0); }
+
+.breathpacer {
+    -fx-shape:  "M 0 0 L 500 10 L 500 20 L 0 30 L -200 20 L -200 10 z";
+}
